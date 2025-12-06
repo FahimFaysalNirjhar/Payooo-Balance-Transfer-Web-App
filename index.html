@@ -19,5 +19,37 @@
       }
     </style>
   </head>
-  <body class="bg-[var(--primary-background)] min-h-screen"></body>
+  <body class="bg-[var(--primary-background)]">
+    <section class="max-w-md min-h-screen mx-auto bg-white">
+      <header class="bg-white flex justify-center items-center pt-32">
+        <img width="70%" src="assets/212600.jpg" alt="" />
+      </header>
+      <!-- form -->
+      <form class="flex justify-center items-center max-w-sm mx-auto mt-4">
+        <fieldset
+          class="fieldset border-base-300 rounded-box w-sm border p-4 bg-white shadow-sm mx-4 md:mx-auto"
+        >
+          <label class="label text-black font-bold text-base"
+            >Mobile Number</label
+          >
+          <input type="email" class="input" placeholder="Enter your Number" />
+
+          <label class="label text-black font-bold text-base"
+            >4 Digit Pin</label
+          >
+          <input
+            type="password"
+            class="input"
+            placeholder="Enter 4 Digit Pin"
+          />
+
+          <button
+            class="btn btn-neutral bg-[#0874F2] outline-0 border-0 mt-4 text-xl text-white rounded-full"
+          >
+            Login
+          </button>
+        </fieldset>
+      </form>
+    </section>
+  </body>
 </html>
