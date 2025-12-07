@@ -8,6 +8,8 @@ login.addEventListener("click", (event) => {
   if (phoneNumber.length === 11) {
     if (convertPin === 1234) {
       window.location.href = "./main.html";
+    } else {
+      alert("Invaild PIN Number");
     }
   } else {
     alert("Invaild Phone Number");
