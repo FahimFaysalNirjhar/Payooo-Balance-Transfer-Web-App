@@ -4,6 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payooo Mobile App</title>
+    <!-- DaisyUl and Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Custom CSS property -->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --primary-background: #1d3557;
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="bg-[var(--primary-background)]">
+    <section class="max-w-md min-h-screen mx-auto bg-white">
+      <header>
+        <!-- container -->
+        <div>
+          <!-- date -->
+          <div id="date"></div>
+        </div>
+      </header>
+    </section>
+    <script src="scripts/date.js"></script>
+  </body>
 </html>
