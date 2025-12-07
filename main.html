@@ -29,6 +29,7 @@
         --color-clifford: #da373d;
         --primary-background: #1d3557;
         --font-outfit: "Outfit", sans-serif;
+        --primary-gray: #08080880;
       }
     </style>
   </head>
@@ -110,11 +111,16 @@
               <h1 class="font-outfit text-lg font-bold">
                 $ <span id="amount">45000</span>
               </h1>
-              <p class="font-outfit text-[#08080880]">Available Balance</p>
+              <p class="font-outfit text-[var(--primary-gray)]">
+                Available Balance
+              </p>
             </div>
           </div>
           <div>
-            <button id="logOut" class="btn font-outfit text-[#08080880]">
+            <button
+              id="logOut"
+              class="btn font-outfit text-[var(--primary-gray)]"
+            >
               <i class="fa-duotone fa-regular fa-arrow-left-from-bracket"></i>
               Log Out
             </button>
@@ -122,6 +128,65 @@
         </div>
         <div class="divider"></div>
       </header>
+      <main>
+        <section>
+          <!-- description -->
+          <p class="text-[#080808] font-outfit text-2xl font-bold">
+            🔥 Welcome to Payooo!
+          </p>
+          <p class="font-outfit text-[var(--primary-gray)] ml-3 mt-3 text-lg">
+            Enjoy easy and convenient financial services with us. Cashout charge
+            is low and
+          </p>
+          <!-- card container -->
+          <div class="grid grid-cols-3 gap-x-1 gap-y-3 mx-1 my-6">
+            <!-- add money -->
+            <div
+              class="flex flex-col justify-center items-center rounded-[12px] border border-black/10 p-4 transition-transform duration-300 hover:border-green-500 hover:scale-105 active:border-green-500 active:scale-105"
+            >
+              <img src="assets/wallet1.png" alt="" />
+              <h1 class="text-[#080808B3] font-outfit text-sm">Add Money</h1>
+            </div>
+            <!-- Cashout -->
+            <div
+              class="flex flex-col justify-center items-center rounded-[12px] border border-black/10 p-4 transition-transform duration-300 hover:border-green-500 hover:scale-105 active:border-green-500 active:scale-105"
+            >
+              <img src="assets/send1.png" alt="" />
+              <h1 class="text-[#080808B3] font-outfit text-sm">Cash Out</h1>
+            </div>
+            <!-- Transfer Money -->
+            <div
+              class="flex flex-col justify-center items-center rounded-[12px] border border-black/10 p-4 transition-transform duration-300 hover:border-green-500 hover:scale-105 active:border-green-500 active:scale-105"
+            >
+              <img src="assets/money1.png" alt="" />
+              <h1 class="text-[#080808B3] font-outfit text-sm">
+                TransferMoney
+              </h1>
+            </div>
+            <!-- Get Bonus -->
+            <div
+              class="flex flex-col justify-center items-center rounded-[12px] border border-black/10 p-4 transition-transform duration-300 hover:border-green-500 hover:scale-105 active:border-green-500 active:scale-105"
+            >
+              <img src="assets/bonus1.png" alt="" />
+              <h1 class="text-[#080808B3] font-outfit text-sm">Get Bonus</h1>
+            </div>
+            <!--Pay Bill  -->
+            <div
+              class="flex flex-col justify-center items-center rounded-[12px] border border-black/10 p-4 transition-transform duration-300 hover:border-green-500 hover:scale-105 active:border-green-500 active:scale-105"
+            >
+              <img src="assets/purse1.png" alt="" />
+              <h1 class="text-[#080808B3] font-outfit text-sm">Pay Bill</h1>
+            </div>
+            <!--Transactions  -->
+            <div
+              class="flex flex-col justify-center items-center rounded-[12px] border border-black/10 p-4 transition-transform duration-300 hover:border-green-500 hover:scale-105 active:border-green-500 active:scale-105"
+            >
+              <img src="assets/transaction1.png" alt="" />
+              <h1 class="text-[#080808B3] font-outfit text-sm">Transactions</h1>
+            </div>
+          </div>
+        </section>
+      </main>
     </section>
     <script src="scripts/date.js"></script>
     <script src="scripts/logout.js"></script>
