@@ -201,12 +201,12 @@
                 class="label text-[#080808B3] font-outfit font-bold text-base"
                 >Select A Bank</label
               >
-              <select class="select">
-                <option disabled selected>Select Bank</option>
-                <option>bkash</option>
-                <option>Nagad</option>
-                <option>Rocket</option>
-                <option>UCB Bank</option>
+              <select id="Add-Money-select-Bank" class="select">
+                <option value="" disabled selected>Select Bank</option>
+                <option value="bkash">bkash</option>
+                <option value="Nagad">Nagad</option>
+                <option value="Rocket">Rocket</option>
+                <option value="UCB">UCB Bank</option>
               </select>
 
               <label
@@ -214,7 +214,7 @@
                 >Bank Account Number</label
               >
               <input
-                id="phoneNumber"
+                id="addMoney-accountNumber"
                 type="number"
                 class="input"
                 placeholder="Enter 11 digit account number"
@@ -224,7 +224,7 @@
                 >Amount to Add</label
               >
               <input
-                id="phoneNumber"
+                id="Add-Money-Amount"
                 type="number"
                 class="input"
                 placeholder="Add Amount"
@@ -235,14 +235,14 @@
                 >Pin Number</label
               >
               <input
-                id="pin"
+                id="Add-Money-Pin"
                 type="password"
                 class="input"
                 placeholder="Enter 4 digit pin number"
               />
 
               <button
-                id="login"
+                id="Add-Money-Btn"
                 class="btn btn-neutral bg-[#0874F2] font-outfit outline-0 border-0 mt-4 text-xl text-white rounded-full"
               >
                 Add Money
@@ -255,5 +255,6 @@
     <script src="scripts/date.js"></script>
     <script src="scripts/logout.js"></script>
     <script src="scripts/sectionHandle.js"></script>
+    <script src="scripts/addmoney.js"></script>
   </body>
 </html>
