@@ -128,7 +128,7 @@
         </div>
         <div class="divider"></div>
       </header>
-      <main>
+      <main class="mb-10">
         <section>
           <!-- description -->
           <p class="text-[#080808] font-outfit text-2xl font-bold">
@@ -142,6 +142,7 @@
           <div class="grid grid-cols-3 gap-x-1 gap-y-3 mx-1 my-6">
             <!-- add money -->
             <div
+              id="addMoney"
               class="flex flex-col justify-center items-center rounded-[12px] border border-black/10 p-4 transition-transform duration-300 hover:border-green-500 hover:scale-105 active:border-green-500 active:scale-105"
             >
               <img src="assets/wallet1.png" alt="" />
@@ -187,7 +188,7 @@
           </div>
         </section>
         <!-- add money -->
-        <section>
+        <section id="addMoneySection">
           <h1 class="text-[#080808E6] font-outfit text-xl font-semibold ml-4">
             Add Money
           </h1>
@@ -237,7 +238,7 @@
                 id="pin"
                 type="password"
                 class="input"
-                placeholder="Enter 1234 as pin number"
+                placeholder="Enter 4 digit pin number"
               />
 
               <button
@@ -253,5 +254,6 @@
     </section>
     <script src="scripts/date.js"></script>
     <script src="scripts/logout.js"></script>
+    <script src="scripts/sectionHandle.js"></script>
   </body>
 </html>
