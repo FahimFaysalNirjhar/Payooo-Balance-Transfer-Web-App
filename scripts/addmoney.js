@@ -1,18 +1,19 @@
 let addMoneybtn = document.getElementById("Add-Money-Btn");
 addMoneybtn.addEventListener("click", (event) => {
   event.preventDefault();
-
+  // Account Number
   let addMoneyAccountNumber = document.getElementById(
     "addMoney-accountNumber"
   ).value;
 
   if (addMoneyAccountNumber.length === 11) {
-    //
+    //pin
     let addMoneyPin = document.getElementById("Add-Money-Pin").value;
     let convertAddMoneyPin = parseInt(addMoneyPin);
 
+    // compare
     if (convertAddMoneyPin === 1234) {
-      //
+      //select bank
       let addMoneySelectBank = document.getElementById(
         "Add-Money-select-Bank"
       ).value;
@@ -20,7 +21,7 @@ addMoneybtn.addEventListener("click", (event) => {
       if (addMoneySelectBank === "") {
         alert("No option selected (Bank)");
       } else {
-        //
+        //amount
         let addMoneyAmount = document.getElementById("Add-Money-Amount").value;
 
         if (addMoneyAmount === "") {
@@ -33,6 +34,55 @@ addMoneybtn.addEventListener("click", (event) => {
           let convertAddMoneyAmount = Number(addMoneyAmount);
           let sum = convertAddMoneyAmount + convertAmount;
           document.getElementById("amount").innerText = sum;
+          let div = document.createElement("div");
+          div.classList.add(
+            "flex",
+            "rounded-xl",
+            "border",
+            "border-black/10",
+            "bg-white",
+            "mx-1",
+            "mb-2"
+          );
+
+          // Create inner structure
+          div.innerHTML = `
+             <div class="rounded-full p-3 bg-[#0808080D]">
+                   <img src="assets/wallet1.png" alt="" />
+            </div>
+            <div class="flex-1 append-new-para"></div>
+                                                      `;
+
+          // Append to transaction section
+          transactionSection.appendChild(div);
+
+          // Select the inner container inside THIS div
+          let appendNewPara = div.querySelector(".append-new-para");
+
+          // Create heading
+          let heading = document.createElement("h1");
+          heading.innerText = "Add Money";
+          heading.classList.add("text-[#080808B3]", "font-outfit", "font-bold");
+          heading.style.marginLeft = "10px";
+
+          // Create paragraph
+          let para = document.createElement("p");
+          let time = new Date();
+          let localTime = time.toLocaleTimeString([], {
+            hour: "2-digit",
+            minute: "2-digit",
+          });
+          para.innerText = `$${addMoneyAmount} received from ${addMoneySelectBank} at ${localTime}`;
+          para.classList.add(
+            "font-outfit",
+            "text-[var(--primary-gray)]",
+            "text-sm"
+          );
+          para.style.marginLeft = "10px";
+
+          // Append heading and para
+          appendNewPara.appendChild(heading);
+          appendNewPara.appendChild(para);
         }
       }
     } else {
