@@ -26,6 +26,56 @@ cashOutBtn.addEventListener("click", (event) => {
         } else {
           let minus = convertAmount - convertCashOutAmount;
           document.getElementById("amount").innerText = minus;
+          // transation history
+          let div = document.createElement("div");
+          div.classList.add(
+            "flex",
+            "rounded-xl",
+            "border",
+            "border-black/10",
+            "bg-white",
+            "mx-1",
+            "mb-2"
+          );
+          div.style.backgroundColor = "#e9edc9";
+          // Create inner structure
+          div.innerHTML = `
+             <div class="rounded-full p-3 bg-[#0808080D]">
+                   <img src="assets/send1.png" alt="" />
+            </div>
+            <div class="flex-1 append-new-para"></div>
+                                                      `;
+
+          // Append to transaction section
+          transactionSection.appendChild(div);
+
+          // Select the inner container inside THIS div
+          let appendNewPara = div.querySelector(".append-new-para");
+
+          // Create heading
+          let heading = document.createElement("h1");
+          heading.innerText = "Cash Out";
+          heading.classList.add("text-[#080808B3]", "font-outfit", "font-bold");
+          heading.style.marginLeft = "10px";
+
+          // Create paragraph
+          let para = document.createElement("p");
+          let time = new Date();
+          let localTime = time.toLocaleTimeString([], {
+            hour: "2-digit",
+            minute: "2-digit",
+          });
+          para.innerText = `$${cashOutAmount} cashed out to ${agentNumber} at ${localTime}`;
+          para.classList.add(
+            "font-outfit",
+            "text-[var(--primary-gray)]",
+            "text-sm"
+          );
+          para.style.marginLeft = "10px";
+
+          // Append heading and para
+          appendNewPara.appendChild(heading);
+          appendNewPara.appendChild(para);
         }
       }
     } else {
