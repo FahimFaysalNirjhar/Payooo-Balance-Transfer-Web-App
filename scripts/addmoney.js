@@ -34,6 +34,8 @@ addMoneybtn.addEventListener("click", (event) => {
           let convertAddMoneyAmount = Number(addMoneyAmount);
           let sum = convertAddMoneyAmount + convertAmount;
           document.getElementById("amount").innerText = sum;
+
+          // transation history
           let div = document.createElement("div");
           div.classList.add(
             "flex",
@@ -44,7 +46,7 @@ addMoneybtn.addEventListener("click", (event) => {
             "mx-1",
             "mb-2"
           );
-
+          div.style.backgroundColor = "#faedcd";
           // Create inner structure
           div.innerHTML = `
              <div class="rounded-full p-3 bg-[#0808080D]">

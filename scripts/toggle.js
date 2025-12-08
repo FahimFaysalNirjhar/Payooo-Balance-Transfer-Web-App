@@ -15,6 +15,7 @@ let addMoney = document.getElementById("addMoney");
 addMoney.addEventListener("click", () => {
   addMoneySection.style.display = "block";
   transactionSection.style.display = "none";
+  cashOutSection.style.display = "none";
 });
 
 //transaction
