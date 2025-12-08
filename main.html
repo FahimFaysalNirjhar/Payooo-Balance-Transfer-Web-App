@@ -150,6 +150,7 @@
             </div>
             <!-- Cashout -->
             <div
+              id="CashOut"
               class="flex flex-col justify-center items-center rounded-[12px] border border-black/10 p-4 transition-transform duration-300 hover:border-green-500 hover:scale-105 active:border-green-500 active:scale-105"
             >
               <img src="assets/send1.png" alt="" />
@@ -247,6 +248,57 @@
                 class="btn btn-neutral bg-[#0874F2] font-outfit outline-0 border-0 mt-4 text-xl text-white rounded-full"
               >
                 Add Money
+              </button>
+            </fieldset>
+          </form>
+        </section>
+        <!-- cashout -->
+        <section id="cashout-section">
+          <h1 class="text-[#080808E6] font-outfit text-xl font-semibold ml-4">
+            Cash Out
+          </h1>
+          <!-- form -->
+          <form class="flex justify-center items-center max-w-sm mx-auto mt-4">
+            <fieldset
+              class="fieldset border-base-300 rounded-box w-sm border p-4 bg-white shadow-sm mx-4 md:mx-auto"
+            >
+              <label
+                class="label text-[#080808B3] font-outfit font-bold text-base"
+                >Agent Number</label
+              >
+              <input
+                id="Agent Number"
+                type="number"
+                class="input"
+                placeholder="Enter 11 digit number"
+              />
+              <label
+                class="label text-[#080808B3] font-outfit font-bold text-base"
+                >Amount</label
+              >
+              <input
+                id="Cash-Out-Amount"
+                type="number"
+                class="input"
+                placeholder="Enter amount to withdraw"
+              />
+
+              <label
+                class="label text-[#080808B3] font-outfit font-bold text-base"
+                >Pin Number</label
+              >
+              <input
+                id="CashOut-Pin"
+                type="password"
+                class="input"
+                placeholder="Enter 4 digit pin number"
+              />
+
+              <button
+                id="Cash-Out-Btn"
+                class="btn btn-neutral bg-[#0874F2] font-outfit outline-0 border-0 mt-4 text-xl text-white rounded-full"
+              >
+                Withdraw Money
               </button>
             </fieldset>
           </form>
