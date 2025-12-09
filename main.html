@@ -386,6 +386,70 @@
             </fieldset>
           </form>
         </section>
+        <!-- pay bill -->
+        <section id="Pay-Bill-Section">
+          <h1 class="text-[#080808E6] font-outfit text-xl font-semibold ml-4">
+            Pay Bill
+          </h1>
+          <!-- form -->
+          <form class="flex justify-center items-center max-w-sm mx-auto mt-4">
+            <fieldset
+              class="fieldset border-base-300 rounded-box w-sm border p-4 bg-white shadow-sm mx-4 md:mx-auto"
+            >
+              <label
+                class="label text-[#080808B3] font-outfit font-bold text-base"
+                >Select To Pay</label
+              >
+              <select id="pay-bill-select-option" class="select">
+                <option value="" disabled selected>
+                  Select payment category
+                </option>
+                <option value="Electricity-Bill">Electricity Bill</option>
+                <option value="Gas-Bill">Gas Bill</option>
+                <option value="Water-Bill">Water Bill</option>
+              </select>
+
+              <label
+                class="label text-[#080808B3] font-outfit font-bold text-base"
+                >Biller Account Number</label
+              >
+              <input
+                id="biller-account-Number"
+                type="number"
+                class="input"
+                placeholder="Enter 11 digit account number"
+              />
+              <label
+                class="label text-[#080808B3] font-outfit font-bold text-base"
+                >Amount to Pay</label
+              >
+              <input
+                id="pay-Amount"
+                type="number"
+                class="input"
+                placeholder="Add Amount to pay"
+              />
+
+              <label
+                class="label text-[#080808B3] font-outfit font-bold text-base"
+                >Pin Number</label
+              >
+              <input
+                id="Biller-Pin"
+                type="password"
+                class="input"
+                placeholder="Enter 4 digit pin number"
+              />
+
+              <button
+                id="Pay-Bill-Btn"
+                class="btn btn-neutral bg-[#0874F2] font-outfit outline-0 border-0 mt-4 text-xl text-white rounded-full"
+              >
+                Pay Now
+              </button>
+            </fieldset>
+          </form>
+        </section>
         <!-- transaction -->
         <section id="transaction-Section">
           <h1
