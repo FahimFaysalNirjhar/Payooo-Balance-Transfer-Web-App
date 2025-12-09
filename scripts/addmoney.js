@@ -85,6 +85,10 @@ addMoneybtn.addEventListener("click", (event) => {
           // Append heading and para
           appendNewPara.appendChild(heading);
           appendNewPara.appendChild(para);
+          alert(
+            `$${addMoneyAmount} received from ${addMoneySelectBank} at ${localTime}`
+          );
+          addMoneySection.style.display = "none";
         }
       }
     } else {

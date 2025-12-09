@@ -128,7 +128,7 @@
         </div>
         <div class="divider"></div>
       </header>
-      <main class="mb-10">
+      <main class="pb-10">
         <section>
           <!-- description -->
           <p class="text-[#080808] font-outfit text-2xl font-bold">
@@ -158,6 +158,7 @@
             </div>
             <!-- Transfer Money -->
             <div
+              id="transfer-money"
               class="flex flex-col justify-center items-center rounded-[12px] border border-black/10 p-4 transition-transform duration-300 hover:border-green-500 hover:scale-105 active:border-green-500 active:scale-105"
             >
               <img src="assets/money1.png" alt="" />
@@ -299,6 +300,57 @@
                 class="btn btn-neutral bg-[#0874F2] font-outfit outline-0 border-0 mt-4 text-xl text-white rounded-full"
               >
                 Withdraw Money
+              </button>
+            </fieldset>
+          </form>
+        </section>
+        <!-- Transfer Money -->
+        <section id="transfer-money-section">
+          <h1 class="text-[#080808E6] font-outfit text-xl font-semibold ml-4">
+            Transfer Money
+          </h1>
+          <!-- form -->
+          <form class="flex justify-center items-center max-w-sm mx-auto mt-4">
+            <fieldset
+              class="fieldset border-base-300 rounded-box w-sm border p-4 bg-white shadow-sm mx-4 md:mx-auto"
+            >
+              <label
+                class="label text-[#080808B3] font-outfit font-bold text-base"
+                >User Account Number</label
+              >
+              <input
+                id="User-Account-Number"
+                type="number"
+                class="input"
+                placeholder="Enter 11 digit number"
+              />
+              <label
+                class="label text-[#080808B3] font-outfit font-bold text-base"
+                >Amount</label
+              >
+              <input
+                id="Transfer-Amount"
+                type="number"
+                class="input"
+                placeholder="Enter amount to transfer"
+              />
+
+              <label
+                class="label text-[#080808B3] font-outfit font-bold text-base"
+                >Pin Number</label
+              >
+              <input
+                id="Transfer-Pin"
+                type="password"
+                class="input"
+                placeholder="Enter 4 digit pin number"
+              />
+
+              <button
+                id="Transfer-Btn"
+                class="btn btn-neutral bg-[#0874F2] font-outfit outline-0 border-0 mt-4 text-xl text-white rounded-full"
+              >
+                Send Now
               </button>
             </fieldset>
           </form>

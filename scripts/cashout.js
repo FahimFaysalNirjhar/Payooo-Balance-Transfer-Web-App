@@ -41,7 +41,7 @@ cashOutBtn.addEventListener("click", (event) => {
           // Create inner structure
           div.innerHTML = `
              <div class="rounded-full p-3 bg-[#0808080D]">
-                   <img src="assets/send1.png" alt="" />
+                   <img src="assets/wallet1.png" alt="" />
             </div>
             <div class="flex-1 append-new-para"></div>
                                                       `;
@@ -76,6 +76,10 @@ cashOutBtn.addEventListener("click", (event) => {
           // Append heading and para
           appendNewPara.appendChild(heading);
           appendNewPara.appendChild(para);
+          alert(
+            `$${cashOutAmount} cashed out to ${agentNumber} at ${localTime}`
+          );
+          cashOutSection.style.display = "none";
         }
       }
     } else {

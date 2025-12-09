@@ -10,12 +10,17 @@ transactionSection.style.display = "none";
 let cashOutSection = document.getElementById("cashout-section");
 cashOutSection.style.display = "none";
 
+// transfer money
+let transferMoneySection = document.getElementById("transfer-money-section");
+transferMoneySection.style.display = "none";
+
 //add money
 let addMoney = document.getElementById("addMoney");
 addMoney.addEventListener("click", () => {
   addMoneySection.style.display = "block";
   transactionSection.style.display = "none";
   cashOutSection.style.display = "none";
+  transferMoneySection.style.display = "none";
 });
 
 //transaction
@@ -24,6 +29,7 @@ transaction.addEventListener("click", () => {
   transactionSection.style.display = "block";
   addMoneySection.style.display = "none";
   cashOutSection.style.display = "none";
+  transferMoneySection.style.display = "none";
 });
 
 //chas out
@@ -32,4 +38,14 @@ cashOut.addEventListener("click", () => {
   addMoneySection.style.display = "none";
   transactionSection.style.display = "none";
   cashOutSection.style.display = "block";
+  transferMoneySection.style.display = "none";
+});
+
+//transfer money
+let transferMoney = document.getElementById("transfer-money");
+transferMoney.addEventListener("click", () => {
+  addMoneySection.style.display = "none";
+  transactionSection.style.display = "none";
+  cashOutSection.style.display = "none";
+  transferMoneySection.style.display = "block";
 });
