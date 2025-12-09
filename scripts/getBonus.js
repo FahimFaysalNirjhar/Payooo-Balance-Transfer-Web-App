@@ -61,7 +61,7 @@ bonusBtn.addEventListener("click", (event) => {
         "text-sm"
       );
       para.style.marginLeft = "10px";
-      para.style.fontSize = "12px";
+      para.style.fontSize = "10px";
 
       // Append heading and para
       appendNewPara.appendChild(heading);
@@ -124,7 +124,7 @@ bonusBtn.addEventListener("click", (event) => {
         "text-sm"
       );
       para.style.marginLeft = "10px";
-      para.style.fontSize = "12px";
+      para.style.fontSize = "10px";
 
       // Append heading and para
       appendNewPara.appendChild(heading);
@@ -188,7 +188,7 @@ bonusBtn.addEventListener("click", (event) => {
         "text-sm"
       );
       para.style.marginLeft = "10px";
-      para.style.fontSize = "12px";
+      para.style.fontSize = "10px";
 
       // Append heading and para
       appendNewPara.appendChild(heading);
