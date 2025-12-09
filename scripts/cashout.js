@@ -26,6 +26,7 @@ cashOutBtn.addEventListener("click", (event) => {
         } else {
           let minus = convertAmount - convertCashOutAmount;
           document.getElementById("amount").innerText = minus;
+
           // transation history
           let div = document.createElement("div");
           div.classList.add(
