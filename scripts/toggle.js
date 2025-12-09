@@ -18,6 +18,10 @@ transferMoneySection.style.display = "none";
 let getBonusSection = document.getElementById("get-bonus-section");
 getBonusSection.style.display = "none";
 
+//Pay Bill
+let PayBillSection = document.getElementById("Pay-Bill-Section");
+PayBillSection.style.display = "none";
+
 //add money
 let addMoney = document.getElementById("addMoney");
 addMoney.addEventListener("click", () => {
@@ -26,6 +30,7 @@ addMoney.addEventListener("click", () => {
   cashOutSection.style.display = "none";
   transferMoneySection.style.display = "none";
   getBonusSection.style.display = "none";
+  PayBillSection.style.display = "none";
 });
 
 //transaction
@@ -36,9 +41,10 @@ transaction.addEventListener("click", () => {
   cashOutSection.style.display = "none";
   transferMoneySection.style.display = "none";
   getBonusSection.style.display = "none";
+  PayBillSection.style.display = "none";
 });
 
-//chas out
+//cash out
 let cashOut = document.getElementById("CashOut");
 cashOut.addEventListener("click", () => {
   addMoneySection.style.display = "none";
@@ -46,6 +52,7 @@ cashOut.addEventListener("click", () => {
   cashOutSection.style.display = "block";
   transferMoneySection.style.display = "none";
   getBonusSection.style.display = "none";
+  PayBillSection.style.display = "none";
 });
 
 //transfer money
@@ -55,6 +62,7 @@ transferMoney.addEventListener("click", () => {
   transactionSection.style.display = "none";
   cashOutSection.style.display = "none";
   getBonusSection.style.display = "none";
+  PayBillSection.style.display = "none";
   transferMoneySection.style.display = "block";
 });
 
@@ -65,5 +73,17 @@ getBonus.addEventListener("click", () => {
   transactionSection.style.display = "none";
   cashOutSection.style.display = "none";
   transferMoneySection.style.display = "none";
+  PayBillSection.style.display = "none";
   getBonusSection.style.display = "block";
+});
+
+//Pay Bill
+let payBill = document.getElementById("Pay-Bill");
+payBill.addEventListener("click", () => {
+  addMoneySection.style.display = "none";
+  transactionSection.style.display = "none";
+  cashOutSection.style.display = "none";
+  transferMoneySection.style.display = "none";
+  getBonusSection.style.display = "none";
+  PayBillSection.style.display = "block";
 });
