@@ -102,3 +102,13 @@ Supported bonus coupons:
 ## 📝 License
 
 This project is **open-source** and free for personal or educational use. Contributions are welcome.
+
+---
+
+## 👤 Author
+
+**Fahim Faysal – Front-End Developer**
+
+- GitHub: [https://github.com/FahimFaysalNirjhar](https://github.com/FahimFaysalNirjhar)
+- Email: [fahimfaysal1995@gmail.com](mailto:fahimfaysal1995@gmail.com)
+
